@@ -1,0 +1,22 @@
+body{
+    background-color: aliceblue;
+    text-align: center;
+    padding-top: 15%;
+}
+
+#stopwatch{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 5rem;
+}
+
+button{
+    height: 2rem;
+    width: 7rem;
+}
+.btn{
+    background-blend-mode: soft-light;
+}
+
+button:hover{
+    cursor: pointer;
+}
