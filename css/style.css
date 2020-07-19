@@ -21,12 +21,13 @@ button{
     position: relative;
 }
 .btn{
+    width: 5rem;
     background-blend-mode: soft-light;
 }
-
-button:hover{
-    cursor: pointer;
-    font-weight: 1000;
+.btn:hover{
+    width: 6rem;
+    transition: width 0.8s;
+    transition-timing-function: ease-in-out;
 }
 
 button:focus{
