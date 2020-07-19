@@ -14,6 +14,8 @@ button{
     font-weight: 500;
     border-radius: 3mm;
     font-size: 1rem;
+    transition-duration: 0.10;
+    text-decoration: none;
     height: 2rem;
     width: 7rem;
 }
@@ -24,4 +26,8 @@ button{
 button:hover{
     cursor: pointer;
     font-weight: 1000;
+}
+
+button:focus{
+    outline: none;
 }
