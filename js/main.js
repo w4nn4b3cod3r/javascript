@@ -20,5 +20,3 @@ startBtn.addEventListener('click', function() {
 resetBtn.addEventListener('click', function() {
     watch.reset();
 });
-
-console.log("hello");
