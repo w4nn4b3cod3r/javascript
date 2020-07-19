@@ -1,12 +1,13 @@
-function Stopwatch() {
+function Stopwatch(element) {
     let time = 0;
     let offset;
     let interval=0;
 
     function update(){
-        time += delta()
-        let formattedTime = timeFormatter(time);
-        console.log(formattedTime)
+        if (watch.isOn){
+            time += delta()
+        }
+        element.textContent = timeFormatter(time);
     }
     function delta(){
         let now = Date.now();
@@ -29,10 +30,12 @@ function Stopwatch() {
         while (milliSeconds.length !== 3) {
             milliSeconds = '0' + milliSeconds;
         }
+        if (milliSeconds.length === 3) {
+            milliSeconds = milliSeconds.slice(0, 2)
+        }
         return minute + ":" + seconds + ":" + milliSeconds;
     }
 
-    this.isOn = false;
 
     this.start = function() {
         if (!this.isOn) {
@@ -49,6 +52,10 @@ function Stopwatch() {
         }
     };
     this.reset = function() {
-        time = 0;
+        if(!watch.isOn) {
+            time = 0;
+            update();
+        }
     };
+    this.isOn = false;
 }
