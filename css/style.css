@@ -1,11 +1,20 @@
+html { 
+    height: 100%; 
+} 
+
 body{
+    background-image: url(/src/undraw_screen_time_vkev.svg);
+    background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
-    padding-top: 10%;
+    background-size: cover;
+    background-position: center;
 }
 
 #timer{
-    font-family: Oswald;
+    font-family: Ubuntu;
     font-size: 60px;
+    color: rgb(10, 177, 107);
     position: relative;
 }
 
@@ -26,20 +35,16 @@ button{
 }
 .btn:hover{
     width: 6rem;
-    transition: width 0.8s;
+    transition: width 0.5s;
     transition-timing-function: ease-in-out;
 }
 
 button:focus{
     outline: none;
 }
-#bg1 {
-    opacity: 0.2;
-    position: absolute;
-    height: 500px; 
-    width: auto;
-}
-
 #myText {
-    font-size: 4rem;
+    font-family: Lobster;
+    color: #f5e508;
+    font-size: 6rem;
+    padding-bottom: 65px;
 }

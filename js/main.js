@@ -29,7 +29,7 @@ myText.addEventListener('mouseover', function() {
 });
 
 myText.addEventListener('mouseleave', function() {
-    document.getElementById('myText').style.color = 'black';
+    document.getElementById('myText').style.color = '#2F2E41';
 });
 
 // ends here 
